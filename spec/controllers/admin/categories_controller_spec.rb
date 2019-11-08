@@ -62,5 +62,12 @@ describe Admin::CategoriesController do
 
     assert_raise(ActiveRecord::RecordNotFound) { Category.find(test_id) }
   end
+    
+  describe "if new category page is generated" do
+    it "should show" do
+      get :new
+      assert_template 'new'
+    end
+  end
   
 end

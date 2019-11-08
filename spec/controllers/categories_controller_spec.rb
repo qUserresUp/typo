@@ -36,6 +36,7 @@ describe CategoriesController, "/index" do
       response.should render_template(:index)
     end
   end
+
 end
 
 describe CategoriesController, '#show' do
